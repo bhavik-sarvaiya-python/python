@@ -26,6 +26,11 @@ print("is" in dummy_string)
 print("xx" not in dummy_string)
 print("is" not in dummy_string)
 
+print("#"*30)
+print("banana"<"bee")
+print("bee">"banana")
+print("bee"=="bEe")
+
 
 
 
