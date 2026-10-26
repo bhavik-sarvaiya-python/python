@@ -1,4 +1,4 @@
-a = [1,5,8,15,10,3] #list
+a = [1,5,8,15,15,15,10,3,3] #list
 b = {1,15,9,8,10} #set
 c = (1,5,6,8,10) #tuple
 d = {'a':10,'b':10} #dic
@@ -14,3 +14,4 @@ a.remove(15)
 print("remove value of 15 in list",a)
 print(a.count(3))
 print(a)
+print(a.index(15))
