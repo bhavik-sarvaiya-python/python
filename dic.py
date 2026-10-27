@@ -34,9 +34,24 @@ print(sorted(runs)) # using the sorted method
                     # only short the key not dict record
 
 print(runs)
+sorted_list = dict(sorted(runs.items(), key=lambda kv:kv[1],reverse=True))
+print("-"*20)
+print(sorted_list)
+print("*"*30)
+sort = dict(sorted(runs.items(),reverse=True))
+print(sort)
+
+sort = dict(sorted(runs.items(),reverse=False))
+print(sort)
+
+min_score = min(runs,key=runs.get)
+max_score = max(runs,key=runs.get)
+print(min_score)
+print(max_score)
 
 
-# lambda arguments : expression
+
+# lambda <arguments> :< expression>
 # lambda function
 
 n = lambda x : x+30;
