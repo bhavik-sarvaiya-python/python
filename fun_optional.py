@@ -18,4 +18,22 @@ updated_salary= all_employess_dtls(emp_salaris)
 print("new salary = ",updated_salary)
 
 
+def full_name(firstName, LastName):
+    return firstName+" "+LastName
+
+list = ["Parth","Makwana"] #list
+dic = {"firstName":"Dhruv","LastName":"Patel"} #dictonary
+
+print(full_name(*list))
+print(full_name(**dic))
+
+def total_makrs(*marks):
+    print("lists of marks :",marks)
+    return sum(marks)
+
+marks = [95,85,76,80]
+
+print("Total marks =",total_makrs(*marks))
+print("Total marks =",total_makrs(56,65,90))
+print("Total marks =",total_makrs(56,65,90,78,86,98))
 
