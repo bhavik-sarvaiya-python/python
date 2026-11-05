@@ -37,3 +37,33 @@ print("Total marks =",total_makrs(*marks))
 print("Total marks =",total_makrs(56,65,90))
 print("Total marks =",total_makrs(56,65,90,78,86,98))
 
+
+visitor = 0 #Global variable
+
+def page_visitor():
+    global visitor # modifive global varibale
+    visitor +=1
+    page = "Home"
+    print("visit the page :",page)
+
+page_visitor()
+page_visitor()
+
+print(f"total visitore = {visitor} ")
+
+
+def shout(text) :
+    return text.upper()+" !"
+
+def lower(text) :
+    return text.lower()+" !"
+
+
+speak = shout
+
+print(speak("Hello all...."))
+
+for style in [speak,lower]:
+    print(style.__name__,"-->",style("This is my call"))
+
+
